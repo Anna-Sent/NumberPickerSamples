@@ -993,8 +993,10 @@ public class NumberPicker extends LinearLayout {
 	@SuppressLint("NewApi")
 	@Override
 	protected boolean dispatchHoverEvent(MotionEvent event) {
-		if (!mHasSelectorWheel) {
-			return super.dispatchHoverEvent(event);
+		if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.ICE_CREAM_SANDWICH) {
+			if (!mHasSelectorWheel) {
+				return super.dispatchHoverEvent(event);
+			}
 		}
 
 		if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.JELLY_BEAN) {
