@@ -1,0 +1,20 @@
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <style name="SampleTheme1" parent="android:Theme">
+        <item name="android:textColor">@android:color/primary_text_light</item>
+        <item name="numberPickerStyle">@style/Widget.Holo.NumberPicker</item>
+    </style>
+
+    <style name="SampleTheme1.Light" parent="android:Theme.Light">
+        <item name="numberPickerStyle">@style/Widget.Holo.Light.NumberPicker</item>
+    </style>
+
+    <style name="SampleTheme2" parent="android:Theme">
+        <item name="numberPickerStyle">@style/Widget.NumberPicker</item>
+    </style>
+
+    <style name="SampleTheme2.Light" parent="android:Theme.Light">
+        <item name="numberPickerStyle">@style/Widget.NumberPicker</item>
+    </style>
+    
+</resources>

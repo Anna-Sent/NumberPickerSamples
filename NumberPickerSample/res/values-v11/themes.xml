@@ -1,0 +1,19 @@
+<resources>
+
+    <style name="SampleTheme1" parent="android:Theme.Holo">
+        <item name="numberPickerStyle">@style/Widget.Holo.NumberPicker</item>
+    </style>
+
+    <style name="SampleTheme1.Light" parent="android:Theme.Holo.Light">
+        <item name="numberPickerStyle">@style/Widget.Holo.Light.NumberPicker</item>
+    </style>
+    
+    <style name="SampleTheme2" parent="android:Theme.Holo">
+        <item name="numberPickerStyle">@style/Widget.NumberPicker</item>
+    </style>
+
+    <style name="SampleTheme2.Light" parent="android:Theme.Holo.Light">
+        <item name="numberPickerStyle">@style/Widget.NumberPicker</item>
+    </style>
+    
+</resources>
