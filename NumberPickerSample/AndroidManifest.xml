@@ -21,17 +21,17 @@
             </intent-filter>
         </activity>
         <activity
-            android:name="com.anna.sent.soft.numberpickersample.DarkThemeActivity1"
-            android:theme="@style/SampleTheme1" />
+            android:name="com.anna.sent.soft.numberpickersample.DarkNumberPickerThemeActivity"
+            android:theme="@style/DarkNumberPickerTheme" />
         <activity
-            android:name="com.anna.sent.soft.numberpickersample.LightThemeActivity1"
-            android:theme="@style/SampleTheme1.Light" />
+            android:name="com.anna.sent.soft.numberpickersample.DarkNumberPickerWithSelectorWheelThemeActivity"
+            android:theme="@style/DarkNumberPickerWithSelectorWheelTheme" />
         <activity
-            android:name="com.anna.sent.soft.numberpickersample.DarkThemeActivity2"
-            android:theme="@style/SampleTheme2" />
+            android:name="com.anna.sent.soft.numberpickersample.LightNumberPickerThemeActivity"
+            android:theme="@style/LightNumberPickerTheme" />
         <activity
-            android:name="com.anna.sent.soft.numberpickersample.LightThemeActivity2"
-            android:theme="@style/SampleTheme2.Light" />
+            android:name="com.anna.sent.soft.numberpickersample.LightNumberPickerWithSelectorWheelThemeActivity"
+            android:theme="@style/LightNumberPickerWithSelectorWheelTheme" />
         </application>
 
 </manifest>

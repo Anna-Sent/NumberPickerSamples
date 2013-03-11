@@ -2,7 +2,7 @@ package com.anna.sent.soft.numberpickersample;
 
 import android.os.Bundle;
 
-public class LightThemeActivity2 extends MyActivity {
+public class DarkNumberPickerThemeActivity extends MyActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

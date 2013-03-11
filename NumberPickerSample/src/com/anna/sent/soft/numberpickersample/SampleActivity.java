@@ -12,39 +12,41 @@ public class SampleActivity extends Activity {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_samples);
 
-		findViewById(R.id.btnDark1).setOnClickListener(
+		findViewById(R.id.btnDarkNumberPicker).setOnClickListener(
 				new View.OnClickListener() {
 					@Override
 					public void onClick(View v) {
 						startActivity(new Intent(SampleActivity.this,
-								DarkThemeActivity1.class));
+								DarkNumberPickerThemeActivity.class));
 					}
 				});
 
-		findViewById(R.id.btnLight1).setOnClickListener(
-				new View.OnClickListener() {
+		findViewById(R.id.btnDarkNumberPickerWithSelectorWheel)
+				.setOnClickListener(new View.OnClickListener() {
 					@Override
 					public void onClick(View v) {
-						startActivity(new Intent(SampleActivity.this,
-								LightThemeActivity1.class));
+						startActivity(new Intent(
+								SampleActivity.this,
+								DarkNumberPickerWithSelectorWheelThemeActivity.class));
 					}
 				});
 
-		findViewById(R.id.btnDark2).setOnClickListener(
+		findViewById(R.id.btnLightNumberPicker).setOnClickListener(
 				new View.OnClickListener() {
 					@Override
 					public void onClick(View v) {
 						startActivity(new Intent(SampleActivity.this,
-								DarkThemeActivity2.class));
+								LightNumberPickerThemeActivity.class));
 					}
 				});
 
-		findViewById(R.id.btnLight2).setOnClickListener(
-				new View.OnClickListener() {
+		findViewById(R.id.btnLightNumberPickerWithSelectorWheel)
+				.setOnClickListener(new View.OnClickListener() {
 					@Override
 					public void onClick(View v) {
-						startActivity(new Intent(SampleActivity.this,
-								LightThemeActivity2.class));
+						startActivity(new Intent(
+								SampleActivity.this,
+								LightNumberPickerWithSelectorWheelThemeActivity.class));
 					}
 				});
 	}

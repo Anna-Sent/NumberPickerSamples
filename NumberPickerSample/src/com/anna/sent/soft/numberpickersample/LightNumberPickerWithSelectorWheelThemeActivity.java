@@ -2,7 +2,7 @@ package com.anna.sent.soft.numberpickersample;
 
 import android.os.Bundle;
 
-public class LightThemeActivity1 extends MyActivity {
+public class LightNumberPickerWithSelectorWheelThemeActivity extends MyActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

@@ -12,16 +12,18 @@
         android:orientation="horizontal" >
 
         <Button
-            android:id="@+id/btnDark1"
-            android:layout_width="wrap_content"
+            android:id="@+id/btnDarkNumberPicker"
+            android:layout_width="0dp"
+            android:layout_weight="1"
             android:layout_height="wrap_content"
-            android:text="Dark theme 1" />
+            android:text="Dark number picker" />
 
         <Button
-            android:id="@+id/btnLight1"
-            android:layout_width="wrap_content"
+            android:id="@+id/btnLightNumberPicker"
+            android:layout_width="0dp"
+            android:layout_weight="1"
             android:layout_height="wrap_content"
-            android:text="Light theme 1" />
+            android:text="Light number picker" />
     </LinearLayout>
 
     <LinearLayout
@@ -31,16 +33,18 @@
         android:orientation="horizontal" >
 
         <Button
-            android:id="@+id/btnDark2"
-            android:layout_width="wrap_content"
+            android:id="@+id/btnDarkNumberPickerWithSelectorWheel"
+            android:layout_width="0dp"
+            android:layout_weight="1"
             android:layout_height="wrap_content"
-            android:text="Dark theme 2" />
+            android:text="Dark holo number picker" />
 
         <Button
-            android:id="@+id/btnLight2"
-            android:layout_width="wrap_content"
+            android:id="@+id/btnLightNumberPickerWithSelectorWheel"
+            android:layout_width="0dp"
+            android:layout_weight="1"
             android:layout_height="wrap_content"
-            android:text="Light theme 2" />
+            android:text="Light holo number picker" />
     </LinearLayout>
 
 </LinearLayout>
