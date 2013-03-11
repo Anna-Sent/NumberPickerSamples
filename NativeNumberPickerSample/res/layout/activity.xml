@@ -6,28 +6,22 @@
     android:orientation="vertical" >
 
     <TextView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:gravity="center"
+        style="@style/TextViewStyle"
         android:text="Vertical number picker orientation" />
 
     <NumberPicker
         android:id="@+id/numberPicker1"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        style="@style/NumberPickerStyle"
         android:orientation="vertical" />
 
     <TextView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:gravity="center"
+        style="@style/TextViewStyle"
         android:paddingTop="20dp"
         android:text="Horizontal number picker orientation" />
 
     <NumberPicker
         android:id="@+id/numberPicker2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        style="@style/NumberPickerStyle"
         android:orientation="horizontal" />
 
 </LinearLayout>
