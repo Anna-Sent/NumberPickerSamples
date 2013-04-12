@@ -1,19 +1,24 @@
-<resources xmlns:android="http://schemas.android.com/apk/res/android">
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
 
-    <style name="DarkNumberPickerTheme" parent="android:Theme.Holo">
-        <item name="numberPickerStyle">@style/Widget.NumberPicker</item>
-    </style>
-
-    <style name="LightNumberPickerTheme" parent="android:Theme.Holo.Light">
-        <item name="numberPickerStyle">@style/Widget.NumberPicker</item>
-    </style>
-
-    <style name="DarkNumberPickerWithSelectorWheelTheme" parent="android:Theme.Holo">
+    <style name="DarkHoloTheme" parent="android:Theme.Holo">
         <item name="numberPickerStyle">@style/Widget.Holo.NumberPicker</item>
+        <item name="datePickerStyle">@style/Widget.Holo.DatePicker</item>
     </style>
 
-    <style name="LightNumberPickerWithSelectorWheelTheme" parent="android:Theme.Holo.Light">
+    <style name="LightHoloTheme" parent="android:Theme.Holo.Light">
         <item name="numberPickerStyle">@style/Widget.Holo.Light.NumberPicker</item>
+        <item name="datePickerStyle">@style/Widget.Holo.Light.DatePicker</item>
+    </style>
+
+    <style name="DarkTheme" parent="android:Theme">
+        <item name="numberPickerStyle">@style/Widget.NumberPicker</item>
+        <item name="datePickerStyle">@style/Widget.DatePicker</item>
+    </style>
+
+    <style name="LightTheme" parent="android:Theme.Light">
+        <item name="numberPickerStyle">@style/Widget.NumberPicker</item>
+        <item name="datePickerStyle">@style/Widget.DatePicker</item>
     </style>
 
 </resources>

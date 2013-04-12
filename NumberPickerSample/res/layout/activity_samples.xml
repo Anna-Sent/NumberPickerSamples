@@ -9,42 +9,46 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:gravity="center"
-        android:orientation="horizontal" >
+        android:orientation="horizontal"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp" >
 
         <Button
-            android:id="@+id/btnDarkNumberPicker"
+            android:id="@+id/btnDarkTheme"
             android:layout_width="0dp"
-            android:layout_weight="1"
             android:layout_height="wrap_content"
-            android:text="Dark number picker" />
+            android:layout_weight="1"
+            android:text="@string/darkTheme" />
 
         <Button
-            android:id="@+id/btnLightNumberPicker"
+            android:id="@+id/btnLightTheme"
             android:layout_width="0dp"
-            android:layout_weight="1"
             android:layout_height="wrap_content"
-            android:text="Light number picker" />
+            android:layout_weight="1"
+            android:text="@string/lightTheme" />
     </LinearLayout>
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:gravity="center"
-        android:orientation="horizontal" >
+        android:orientation="horizontal"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp" >
 
         <Button
-            android:id="@+id/btnDarkNumberPickerWithSelectorWheel"
+            android:id="@+id/btnDarkHoloTheme"
             android:layout_width="0dp"
-            android:layout_weight="1"
             android:layout_height="wrap_content"
-            android:text="Dark holo number picker" />
+            android:layout_weight="1"
+            android:text="@string/darkHoloTheme" />
 
         <Button
-            android:id="@+id/btnLightNumberPickerWithSelectorWheel"
+            android:id="@+id/btnLightHoloTheme"
             android:layout_width="0dp"
-            android:layout_weight="1"
             android:layout_height="wrap_content"
-            android:text="Light holo number picker" />
+            android:layout_weight="1"
+            android:text="@string/lightHoloTheme" />
     </LinearLayout>
 
 </LinearLayout>

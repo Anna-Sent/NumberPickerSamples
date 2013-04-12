@@ -9,10 +9,11 @@
         android:targetSdkVersion="17" />
 
     <application
+        android:allowBackup="true"
         android:icon="@drawable/ic_launcher"
         android:label="@string/app_name" >
         <activity
-            android:name="com.anna.sent.soft.numberpickersample.SampleActivity"
+            android:name=".SampleActivity"
             android:label="@string/app_name" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -20,18 +21,7 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity
-            android:name="com.anna.sent.soft.numberpickersample.DarkNumberPickerThemeActivity"
-            android:theme="@style/DarkNumberPickerTheme" />
-        <activity
-            android:name="com.anna.sent.soft.numberpickersample.DarkNumberPickerWithSelectorWheelThemeActivity"
-            android:theme="@style/DarkNumberPickerWithSelectorWheelTheme" />
-        <activity
-            android:name="com.anna.sent.soft.numberpickersample.LightNumberPickerThemeActivity"
-            android:theme="@style/LightNumberPickerTheme" />
-        <activity
-            android:name="com.anna.sent.soft.numberpickersample.LightNumberPickerWithSelectorWheelThemeActivity"
-            android:theme="@style/LightNumberPickerWithSelectorWheelTheme" />
-        </application>
+        <activity android:name=".MyActivity" />
+    </application>
 
 </manifest>

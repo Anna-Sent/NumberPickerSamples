@@ -1,11 +1,29 @@
 package com.anna.sent.soft.numberpickersample;
 
 import com.anna.sent.soft.numberpickerlibrary.NumberPicker;
+import com.anna.sent.soft.numberpickerlibrary.DatePicker;
 
 import android.app.Activity;
+import android.os.Bundle;
 
 public class MyActivity extends Activity {
-	protected void setNumberPickerProperties() {
+	public final static String EXTRA_THEME_ID = "themeId";
+
+	@Override
+	protected void onCreate(Bundle savedInstanceState) {
+		setTheme(getIntent().getIntExtra(EXTRA_THEME_ID, 0));
+
+		super.onCreate(savedInstanceState);
+		setContentView(R.layout.activity);
+
+		setNumberPickerProperties();
+
+		DatePicker datePicker = (DatePicker) findViewById(R.id.datePicker);
+		datePicker.updateDate(2011, 3, 15);
+	}
+
+	private void setNumberPickerProperties() {
+
 		NumberPicker np1 = (NumberPicker) findViewById(R.id.numberPicker1);
 		np1.setMaxValue(20);
 		np1.setMinValue(0);

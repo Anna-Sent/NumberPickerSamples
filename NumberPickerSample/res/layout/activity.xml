@@ -1,27 +1,42 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:gravity="center"
     android:orientation="vertical" >
 
-    <TextView
-        style="@style/TextViewStyle"
-        android:text="Vertical number picker orientation" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical" >
 
-    <com.anna.sent.soft.numberpickerlibrary.NumberPicker
-        android:id="@+id/numberPicker1"
-        style="@style/NumberPickerStyle"
-        android:orientation="vertical" />
+        <TextView
+            style="@style/TextViewStyle"
+            android:text="@string/verticalNumberPicker" />
 
-    <TextView
-        style="@style/TextViewStyle"
-        android:paddingTop="20dp"
-        android:text="Horizontal number picker orientation" />
+        <com.anna.sent.soft.numberpickerlibrary.NumberPicker
+            android:id="@+id/numberPicker1"
+            style="@style/NumberPickerStyle"
+            android:orientation="vertical" />
 
-    <com.anna.sent.soft.numberpickerlibrary.NumberPicker
-        android:id="@+id/numberPicker2"
-        style="@style/NumberPickerStyle"
-        android:orientation="horizontal" />
+        <TextView
+            style="@style/TextViewStyle"
+            android:paddingTop="20dp"
+            android:text="@string/horizontalNumberPicker" />
 
-</LinearLayout>
+        <com.anna.sent.soft.numberpickerlibrary.NumberPicker
+            android:id="@+id/numberPicker2"
+            style="@style/NumberPickerStyle"
+            android:orientation="horizontal" />
+
+        <TextView
+            style="@style/TextViewStyle"
+            android:paddingTop="20dp"
+            android:text="@string/datePicker" />
+
+        <com.anna.sent.soft.numberpickerlibrary.DatePicker
+            android:id="@+id/datePicker"
+            style="@style/DatePickerStyle" />
+    </LinearLayout>
+
+</ScrollView>
