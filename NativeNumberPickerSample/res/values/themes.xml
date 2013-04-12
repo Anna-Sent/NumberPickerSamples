@@ -1,19 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
 <resources>
 
-    <style name="SampleTheme1" parent="android:Theme">
-        <!-- not public, google bug? item name="android:numberPickerStyle">@android:style/Widget.Holo.NumberPicker</item-->
+    <style name="DarkHoloTheme" parent="android:Theme.Holo">
+        <item name="android:datePickerStyle">@android:style/Widget.Holo.DatePicker</item>
     </style>
 
-    <style name="SampleTheme1.Light" parent="android:Theme.Light">
-        <!-- not public, google bug? item name="android:numberPickerStyle">@android:style/Widget.Holo.Light.NumberPicker</item-->
+    <style name="LightHoloTheme" parent="android:Theme.Holo.Light">
+        <item name="android:datePickerStyle">@android:style/Widget.Holo.DatePicker</item>
     </style>
 
-    <style name="SampleTheme2" parent="android:Theme">
-        <!-- not public, google bug? item name="android:numberPickerStyle">@android:style/Widget.NumberPicker</item-->
+    <style name="DarkTheme" parent="android:Theme">
+        <item name="android:datePickerStyle">@android:style/Widget.DatePicker</item>
     </style>
 
-    <style name="SampleTheme2.Light" parent="android:Theme.Light">
-        <!-- not public, google bug? item name="android:numberPickerStyle">@android:style/Widget.NumberPicker</item-->
+    <style name="LightTheme" parent="android:Theme.Light">
+        <item name="android:datePickerStyle">@android:style/Widget.DatePicker</item>
     </style>
-    
+
 </resources>

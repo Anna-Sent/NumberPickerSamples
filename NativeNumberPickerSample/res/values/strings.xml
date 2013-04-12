@@ -2,5 +2,12 @@
 <resources>
 
     <string name="app_name">NativeNumberPickerSample</string>
+    <string name="verticalNumberPicker">Vertical number picker</string>
+    <string name="horizontalNumberPicker">Horizontal number picker</string>
+    <string name="datePicker">Date picker</string>
+    <string name="darkTheme">Dark theme</string>
+    <string name="darkHoloTheme">Dark holo theme</string>
+    <string name="lightTheme">Light theme</string>
+    <string name="lightHoloTheme">Light holo theme</string>
 
 </resources>

@@ -9,38 +9,50 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:gravity="center"
-        android:orientation="horizontal" >
+        android:orientation="horizontal"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp" >
 
         <Button
-            android:id="@+id/btnDark1"
-            android:layout_width="wrap_content"
+            android:id="@+id/btnDarkTheme"
+            style="@android:attr/buttonBarButtonStyle"
+            android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:text="Dark theme 1" />
+            android:layout_weight="1"
+            android:text="@string/darkTheme" />
 
         <Button
-            android:id="@+id/btnLight1"
-            android:layout_width="wrap_content"
+            android:id="@+id/btnLightTheme"
+            style="@android:attr/buttonBarButtonStyle"
+            android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:text="Light theme 1" />
+            android:layout_weight="1"
+            android:text="@string/lightTheme" />
     </LinearLayout>
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:gravity="center"
-        android:orientation="horizontal" >
+        android:orientation="horizontal"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp" >
 
         <Button
-            android:id="@+id/btnDark2"
-            android:layout_width="wrap_content"
+            android:id="@+id/btnDarkHoloTheme"
+            style="@android:attr/buttonBarButtonStyle"
+            android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:text="Dark theme 2" />
+            android:layout_weight="1"
+            android:text="@string/darkHoloTheme" />
 
         <Button
-            android:id="@+id/btnLight2"
-            android:layout_width="wrap_content"
+            android:id="@+id/btnLightHoloTheme"
+            style="@android:attr/buttonBarButtonStyle"
+            android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:text="Light theme 2" />
+            android:layout_weight="1"
+            android:text="@string/lightHoloTheme" />
     </LinearLayout>
 
 </LinearLayout>

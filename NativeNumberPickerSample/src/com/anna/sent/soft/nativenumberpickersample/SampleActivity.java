@@ -6,45 +6,52 @@ import android.os.Bundle;
 import android.view.View;
 
 public class SampleActivity extends Activity {
-
 	@Override
 	public void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_samples);
 
-		findViewById(R.id.btnDark1).setOnClickListener(
+		findViewById(R.id.btnDarkTheme).setOnClickListener(
 				new View.OnClickListener() {
 					@Override
 					public void onClick(View v) {
 						startActivity(new Intent(SampleActivity.this,
-								DarkThemeActivity1.class));
+								MyActivity.class)
+								.putExtra(MyActivity.EXTRA_THEME_ID,
+										R.style.DarkTheme));
 					}
 				});
 
-		findViewById(R.id.btnLight1).setOnClickListener(
+		findViewById(R.id.btnLightTheme).setOnClickListener(
 				new View.OnClickListener() {
 					@Override
 					public void onClick(View v) {
 						startActivity(new Intent(SampleActivity.this,
-								LightThemeActivity1.class));
+								MyActivity.class).putExtra(
+								MyActivity.EXTRA_THEME_ID,
+								R.style.LightTheme));
 					}
 				});
 
-		findViewById(R.id.btnDark2).setOnClickListener(
+		findViewById(R.id.btnDarkHoloTheme).setOnClickListener(
 				new View.OnClickListener() {
 					@Override
 					public void onClick(View v) {
 						startActivity(new Intent(SampleActivity.this,
-								DarkThemeActivity2.class));
+								MyActivity.class)
+								.putExtra(MyActivity.EXTRA_THEME_ID,
+										R.style.DarkHoloTheme));
 					}
 				});
 
-		findViewById(R.id.btnLight2).setOnClickListener(
+		findViewById(R.id.btnLightHoloTheme).setOnClickListener(
 				new View.OnClickListener() {
 					@Override
 					public void onClick(View v) {
 						startActivity(new Intent(SampleActivity.this,
-								LightThemeActivity2.class));
+								MyActivity.class).putExtra(
+								MyActivity.EXTRA_THEME_ID,
+								R.style.LightHoloTheme));
 					}
 				});
 	}
