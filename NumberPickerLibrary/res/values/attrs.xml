@@ -3,6 +3,7 @@
 
     <declare-styleable name="Theme">
         <attr name="numberPickerStyle" format="reference" />
+        <attr name="datePickerStyle" format="reference" />
     </declare-styleable>
     <declare-styleable name="NumberPicker">
 
@@ -26,6 +27,27 @@
         <attr name="internalLayout" format="reference" />
         <!-- @hide The drawable for pressed virtual (increment/decrement) buttons. -->
         <attr name="virtualButtonPressedDrawable" format="reference" />
+    </declare-styleable>
+    <declare-styleable name="DatePicker">
+
+        <!--
+             The first year (inclusive), for example "1940".
+             {@deprecated Use minDate instead.}
+        -->
+        <attr name="startYear" format="integer" />
+        <!--
+             The last year (inclusive), for example "2010".
+             {@deprecated Use maxDate instead.}
+        -->
+        <attr name="endYear" format="integer" />
+        <!-- Whether the spinners are shown. -->
+        <attr name="spinnersShown" format="boolean" />
+        <!-- The minimal date shown by this calendar view in mm/dd/yyyy format. -->
+        <attr name="minDate" format="string" />
+        <!-- The maximal date shown by this calendar view in mm/dd/yyyy format. -->
+        <attr name="maxDate" format="string" />
+        <!-- @hide The layout of the date picker. -->
+        <attr name="datePickerInternalLayout" format="reference" />
     </declare-styleable>
 
 </resources>

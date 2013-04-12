@@ -1,3 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
 <resources xmlns:android="http://schemas.android.com/apk/res/android">
 
     <style name="NumberPickerInputText" parent="android:TextAppearance.Large.Inverse">
@@ -14,7 +15,7 @@
         <item name="android:orientation">vertical</item>
         <item name="android:fadingEdge">vertical</item>
         <item name="android:fadingEdgeLength">50dip</item>
-        </style>
+    </style>
 
     <style name="Widget.Holo.NumberPicker" parent="Widget.NumberPicker">
         <item name="internalLayout">@layout/number_picker_with_selector_wheel</item>
@@ -30,5 +31,15 @@
     <style name="Widget.Holo.Light.NumberPicker" parent="Widget.Holo.NumberPicker">
         <item name="virtualButtonPressedDrawable">@drawable/item_background_holo_light</item>
     </style>
+
+    <style name="Widget.DatePicker">
+        <item name="datePickerInternalLayout">@layout/date_picker</item>
+    </style>
+
+    <style name="Widget.Holo.DatePicker" parent="Widget.DatePicker">
+        <item name="datePickerInternalLayout">@layout/date_picker_holo</item>
+    </style>
+
+    <style name="Widget.Holo.Light.DatePicker" parent="Widget.Holo.DatePicker"></style>
 
 </resources>
