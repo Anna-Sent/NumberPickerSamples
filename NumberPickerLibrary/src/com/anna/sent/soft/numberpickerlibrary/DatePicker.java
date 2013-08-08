@@ -498,6 +498,7 @@ public class DatePicker extends FrameLayout {
 	 * by the user and if no such is set fall back to the current locale's
 	 * default format.
 	 */
+	@SuppressWarnings("deprecation")
 	private void reorderSpinners() {
 		mSpinners.removeAllViews();
 		char[] order = DateFormat.getDateFormatOrder(getContext());
