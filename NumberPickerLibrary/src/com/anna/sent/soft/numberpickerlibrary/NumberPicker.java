@@ -1155,6 +1155,21 @@ public class NumberPicker extends LinearLayout {
 	}
 
 	@Override
+	protected int computeVerticalScrollOffset() {
+		return mCurrentScrollOffset;
+	}
+
+	@Override
+	protected int computeVerticalScrollRange() {
+		return (mMaxValue - mMinValue + 1) * mSelectorElementHeight;
+	}
+
+	@Override
+	protected int computeVerticalScrollExtent() {
+		return getHeight();
+	}
+
+	@Override
 	public int getSolidColor() {
 		return mSolidColor;
 	}
@@ -1499,6 +1514,7 @@ public class NumberPicker extends LinearLayout {
 
 	@Override
 	protected void onDetachedFromWindow() {
+		super.onDetachedFromWindow();
 		removeAllCallbacks();
 	}
 
