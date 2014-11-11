@@ -17,13 +17,12 @@ public class SampleActivity extends Activity {
 					public void onClick(View v) {
 						startActivity(new Intent(SampleActivity.this,
 								MyActivity.class).putExtra(
-								MyActivity.EXTRA_THEME_ID,
-								R.style.DarkTheme));
+								MyActivity.EXTRA_THEME_ID, R.style.DarkTheme));
 					}
 				});
 
-		findViewById(R.id.btnDarkHoloTheme)
-				.setOnClickListener(new View.OnClickListener() {
+		findViewById(R.id.btnDarkHoloTheme).setOnClickListener(
+				new View.OnClickListener() {
 					@Override
 					public void onClick(View v) {
 						startActivity(new Intent(SampleActivity.this,
@@ -39,20 +38,18 @@ public class SampleActivity extends Activity {
 					public void onClick(View v) {
 						startActivity(new Intent(SampleActivity.this,
 								MyActivity.class).putExtra(
-								MyActivity.EXTRA_THEME_ID,
-								R.style.LightTheme));
+								MyActivity.EXTRA_THEME_ID, R.style.LightTheme));
 					}
 				});
 
-		findViewById(R.id.btnLightHoloTheme)
-				.setOnClickListener(new View.OnClickListener() {
+		findViewById(R.id.btnLightHoloTheme).setOnClickListener(
+				new View.OnClickListener() {
 					@Override
 					public void onClick(View v) {
 						startActivity(new Intent(SampleActivity.this,
-								MyActivity.class)
-								.putExtra(
-										MyActivity.EXTRA_THEME_ID,
-										R.style.LightHoloTheme));
+								MyActivity.class).putExtra(
+								MyActivity.EXTRA_THEME_ID,
+								R.style.LightHoloTheme));
 					}
 				});
 	}

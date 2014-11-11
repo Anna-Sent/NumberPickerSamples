@@ -16,9 +16,8 @@ public class SampleActivity extends Activity {
 					@Override
 					public void onClick(View v) {
 						startActivity(new Intent(SampleActivity.this,
-								MyActivity.class)
-								.putExtra(MyActivity.EXTRA_THEME_ID,
-										R.style.DarkTheme));
+								MyActivity.class).putExtra(
+								MyActivity.EXTRA_THEME_ID, R.style.DarkTheme));
 					}
 				});
 
@@ -28,8 +27,7 @@ public class SampleActivity extends Activity {
 					public void onClick(View v) {
 						startActivity(new Intent(SampleActivity.this,
 								MyActivity.class).putExtra(
-								MyActivity.EXTRA_THEME_ID,
-								R.style.LightTheme));
+								MyActivity.EXTRA_THEME_ID, R.style.LightTheme));
 					}
 				});
 
@@ -38,9 +36,9 @@ public class SampleActivity extends Activity {
 					@Override
 					public void onClick(View v) {
 						startActivity(new Intent(SampleActivity.this,
-								MyActivity.class)
-								.putExtra(MyActivity.EXTRA_THEME_ID,
-										R.style.DarkHoloTheme));
+								MyActivity.class).putExtra(
+								MyActivity.EXTRA_THEME_ID,
+								R.style.DarkHoloTheme));
 					}
 				});
 
