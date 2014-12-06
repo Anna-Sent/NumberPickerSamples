@@ -32,14 +32,4 @@
         <item name="virtualButtonPressedDrawable">@drawable/item_background_holo_light</item>
     </style>
 
-    <style name="Widget.DatePicker">
-        <item name="datePickerInternalLayout">@layout/date_picker</item>
-    </style>
-
-    <style name="Widget.Holo.DatePicker" parent="Widget.DatePicker">
-        <item name="datePickerInternalLayout">@layout/date_picker_holo</item>
-    </style>
-
-    <style name="Widget.Holo.Light.DatePicker" parent="Widget.Holo.DatePicker"></style>
-
 </resources>
