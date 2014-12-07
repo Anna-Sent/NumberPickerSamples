@@ -25,6 +25,7 @@ import java.util.List;
 import java.util.Locale;
 
 import android.annotation.SuppressLint;
+import android.annotation.TargetApi;
 import android.content.Context;
 import android.content.res.ColorStateList;
 import android.content.res.Resources;
@@ -579,7 +580,7 @@ public class NumberPicker extends LinearLayout {
 	 * @param defStyle
 	 *            The default style to apply to this view.
 	 */
-	@SuppressLint("NewApi")
+	@TargetApi(Build.VERSION_CODES.JELLY_BEAN)
 	public NumberPicker(Context context, AttributeSet attrs, int defStyle) {
 		super(context, attrs);
 
@@ -884,6 +885,7 @@ public class NumberPicker extends LinearLayout {
 		return false;
 	}
 
+	@SuppressLint("ClickableViewAccessibility")
 	@Override
 	public boolean onTouchEvent(MotionEvent event) {
 		if (!isEnabled() || !mHasSelectorWheel) {
@@ -1021,7 +1023,7 @@ public class NumberPicker extends LinearLayout {
 		return super.dispatchTrackballEvent(event);
 	}
 
-	@SuppressLint("NewApi")
+	@TargetApi(Build.VERSION_CODES.JELLY_BEAN)
 	@Override
 	protected boolean dispatchHoverEvent(MotionEvent event) {
 		if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.ICE_CREAM_SANDWICH) {
@@ -1583,7 +1585,7 @@ public class NumberPicker extends LinearLayout {
 		}
 	}
 
-	@SuppressLint("NewApi")
+	@TargetApi(Build.VERSION_CODES.ICE_CREAM_SANDWICH_MR1)
 	@Override
 	public void onInitializeAccessibilityEvent(AccessibilityEvent event) {
 		super.onInitializeAccessibilityEvent(event);
@@ -1596,7 +1598,7 @@ public class NumberPicker extends LinearLayout {
 		}
 	}
 
-	@SuppressLint("NewApi")
+	@TargetApi(Build.VERSION_CODES.JELLY_BEAN)
 	@Override
 	public AccessibilityNodeProvider getAccessibilityNodeProvider() {
 		if (!mHasSelectorWheel) {
@@ -1675,7 +1677,7 @@ public class NumberPicker extends LinearLayout {
 	 *         {@link #MEASURED_SIZE_MASK} and {@link #MEASURED_STATE_TOO_SMALL}
 	 *         .
 	 */
-	@SuppressLint("NewApi")
+	@TargetApi(Build.VERSION_CODES.HONEYCOMB)
 	public static int _resolveSizeAndState(int size, int measureSpec,
 			int childMeasuredState) {
 		if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.HONEYCOMB) {
@@ -2341,7 +2343,7 @@ public class NumberPicker extends LinearLayout {
 	/**
 	 * Class for managing virtual view tree rooted at this picker.
 	 */
-	@SuppressLint("NewApi")
+	@TargetApi(Build.VERSION_CODES.JELLY_BEAN)
 	class AccessibilityNodeProviderImpl extends AccessibilityNodeProvider {
 		private static final int UNDEFINED = Integer.MIN_VALUE;
 
