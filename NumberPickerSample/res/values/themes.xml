@@ -3,22 +3,18 @@
 
     <style name="DarkHoloTheme" parent="android:Theme">
         <item name="numberPickerStyle">@style/Widget.Holo.NumberPicker</item>
-        <item name="datePickerStyle">@style/Widget.Holo.DatePicker</item>
     </style>
 
     <style name="LightHoloTheme" parent="android:Theme.Light">
         <item name="numberPickerStyle">@style/Widget.Holo.Light.NumberPicker</item>
-        <item name="datePickerStyle">@style/Widget.Holo.Light.DatePicker</item>
     </style>
 
     <style name="DarkTheme" parent="android:Theme">
         <item name="numberPickerStyle">@style/Widget.NumberPicker</item>
-        <item name="datePickerStyle">@style/Widget.DatePicker</item>
     </style>
 
     <style name="LightTheme" parent="android:Theme.Light">
         <item name="numberPickerStyle">@style/Widget.NumberPicker</item>
-        <item name="datePickerStyle">@style/Widget.DatePicker</item>
     </style>
 
 </resources>

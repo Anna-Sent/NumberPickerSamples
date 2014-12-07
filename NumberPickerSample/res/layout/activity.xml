@@ -28,15 +28,6 @@
             android:id="@+id/numberPicker2"
             style="@style/NumberPickerStyle"
             android:orientation="horizontal" />
-
-        <TextView
-            style="@style/TextViewStyle"
-            android:paddingTop="20dp"
-            android:text="@string/datePicker" />
-
-        <com.anna.sent.soft.numberpickerlibrary.DatePicker
-            android:id="@+id/datePicker"
-            style="@style/DatePickerStyle" />
     </LinearLayout>
 
 </ScrollView>

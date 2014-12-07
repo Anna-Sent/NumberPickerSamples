@@ -1,7 +1,6 @@
 package com.anna.sent.soft.numberpickersample;
 
 import com.anna.sent.soft.numberpickerlibrary.NumberPicker;
-import com.anna.sent.soft.numberpickerlibrary.DatePicker;
 
 import android.app.Activity;
 import android.os.Bundle;
@@ -17,9 +16,6 @@ public class MyActivity extends Activity {
 		setContentView(R.layout.activity);
 
 		setNumberPickerProperties();
-
-		DatePicker datePicker = (DatePicker) findViewById(R.id.datePicker);
-		datePicker.updateDate(2011, 3, 15);
 	}
 
 	private void setNumberPickerProperties() {
