@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
 
-    <string name="number_picker_increment_button" msgid="2412072272832284313">"Увеличить"</string>
-    <string name="number_picker_decrement_button" msgid="476050778386779067">"Уменьшить"</string>
+    <string name="number_picker_increment_button">"Увеличить"</string>
+    <string name="number_picker_decrement_button">"Уменьшить"</string>
 
 </resources>

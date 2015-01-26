@@ -6,11 +6,11 @@
         severity="ignore" />
 
     <issue
-        id="IconDuplicates"
+        id="RtlHardcoded"
         severity="ignore" />
 
     <issue
-        id="MissingTranslation"
+        id="RtlSymmetry"
         severity="ignore" />
 
 </lint>
