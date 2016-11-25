@@ -7,7 +7,7 @@
 
     <uses-sdk
         android:minSdkVersion="6"
-        android:targetSdkVersion="17"
+        android:targetSdkVersion="19"
         tools:ignore="OldTargetApi" />
 
     <application
@@ -15,7 +15,7 @@
         android:icon="@drawable/ic_launcher"
         android:label="@string/app_name" >
         <activity
-            android:name=".SampleActivity"
+            android:name="com.anna.sent.soft.numberpickersample.SampleActivity"
             android:label="@string/app_name" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -23,7 +23,7 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".MyActivity" />
+        <activity android:name="com.anna.sent.soft.numberpickersample.MyActivity" />
     </application>
 
 </manifest>

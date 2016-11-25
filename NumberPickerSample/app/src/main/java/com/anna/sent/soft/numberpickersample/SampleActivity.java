@@ -21,6 +21,16 @@ public class SampleActivity extends Activity {
 					}
 				});
 
+		findViewById(R.id.btnLightTheme).setOnClickListener(
+				new View.OnClickListener() {
+					@Override
+					public void onClick(View v) {
+						startActivity(new Intent(SampleActivity.this,
+								MyActivity.class).putExtra(
+								MyActivity.EXTRA_THEME_ID, R.style.LightTheme));
+					}
+				});
+
 		findViewById(R.id.btnDarkHoloTheme).setOnClickListener(
 				new View.OnClickListener() {
 					@Override
@@ -29,16 +39,6 @@ public class SampleActivity extends Activity {
 								MyActivity.class).putExtra(
 								MyActivity.EXTRA_THEME_ID,
 								R.style.DarkHoloTheme));
-					}
-				});
-
-		findViewById(R.id.btnLightTheme).setOnClickListener(
-				new View.OnClickListener() {
-					@Override
-					public void onClick(View v) {
-						startActivity(new Intent(SampleActivity.this,
-								MyActivity.class).putExtra(
-								MyActivity.EXTRA_THEME_ID, R.style.LightTheme));
 					}
 				});
 

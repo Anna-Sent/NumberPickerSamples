@@ -2,13 +2,13 @@
 <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical" >
+    android:orientation="vertical">
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:gravity="center"
-        android:orientation="vertical" >
+        android:orientation="vertical">
 
         <TextView
             style="@style/TextViewStyle"
@@ -28,6 +28,15 @@
             android:id="@+id/numberPicker2"
             style="@style/NumberPickerStyle"
             android:orientation="horizontal" />
+
+        <TextView
+            style="@style/TextViewStyle"
+            android:paddingTop="20dp"
+            android:text="@string/datePicker" />
+
+        <DatePicker
+            android:id="@+id/datePicker"
+            style="@style/DatePickerStyle" />
     </LinearLayout>
 
 </ScrollView>
