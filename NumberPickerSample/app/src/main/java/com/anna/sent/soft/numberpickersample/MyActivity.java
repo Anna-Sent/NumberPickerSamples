@@ -1,8 +1,7 @@
 package com.anna.sent.soft.numberpickersample;
 
-import android.os.Bundle;
-
 import android.app.Activity;
+import android.os.Bundle;
 
 import com.anna.sent.soft.numberpickerlibrary.NumberPicker;
 
