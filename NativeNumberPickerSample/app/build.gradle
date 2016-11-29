@@ -8,6 +8,8 @@ android {
         applicationId "com.anna.sent.soft.nativenumberpickersample"
         minSdkVersion 11
         targetSdkVersion 19
+        versionCode 1
+        versionName "1.0"
     }
 
     buildTypes {

@@ -6,12 +6,10 @@
     <style name="LightHoloTheme" parent="LightTheme" />
 
     <style name="DarkTheme" parent="android:Theme">
-        <item name="android:datePickerStyle">@android:style/Widget.DatePicker</item>
         <item name="numberPickerStyle">@style/Widget.NumberPicker</item>
     </style>
 
     <style name="LightTheme" parent="android:Theme.Light">
-        <item name="android:datePickerStyle">@android:style/Widget.DatePicker</item>
         <item name="numberPickerStyle">@style/Widget.NumberPicker</item>
     </style>
 
